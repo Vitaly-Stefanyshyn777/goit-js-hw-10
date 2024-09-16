@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackbar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/2-snackbar.css" />
-  </head>
-  <body>
-    <p class="go-back"><a href="./index.html">Go to home</a></p>
-    <section>
-      <form class="promise-form js-form">
-        <label class="input-box">
-          Delay (ms)
-          <input class="users-value" type="number" name="delay" required />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snackbar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/2-snackbar.css" />
+</head>
+
+<body>
+  <p class="go-back"><a href="./index.html">Go to home</a></p>
+  <section>
+    <form class="promise-form js-form">
+      <label class="input-box">
+        Delay (ms)
+        <input class="users-value" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="state-box">
+        <legend class="state">State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          <p>Fulfilled</p>
         </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          <p>Rejected</p>
+        </label>
+      </fieldset>
 
-        <fieldset class="state-box">
-          <legend class="state">State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            <p>Fulfilled</p>
-          </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            <p>Rejected</p>
-          </label>
-        </fieldset>
+      <button class="promise-btn" type="submit">Create notification</button>
+    </form>
+  </section>
 
-        <button class="promise-btn" type="submit">Create notification</button>
-      </form>
-    </section>
+  <script src="./js/2-snackbar.js" type="module"></script>
+</body>
 
-    <script src="./js/2-snackbar.js" type="module"></script>
-  </body>
 </html>
