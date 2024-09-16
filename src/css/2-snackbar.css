@@ -1,0 +1,89 @@
+@import url('./reset.css');
+
+label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 24px; /* 150% */
+}
+
+.users-value {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  outline: none;
+  transition: border-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.users-value:hover {
+  border-color: #000;
+}
+.users-value:focus {
+  border-color: #4e75ff;
+}
+
+.promise-form {
+  width: 440px;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+.state-box {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  transition: border-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.state-box:hover,
+.state-box:focus-within {
+  border-color: #000;
+}
+
+.state {
+  text-align: start;
+  color: #2e2f42;
+
+  font-family: Montserrat;
+
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.state-box label input {
+  width: 16px;
+  height: 16px;
+}
+
+.state-box label {
+  display: flex;
+}
+
+.promise-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  transition: background-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.promise-btn:hover,
+.promise-btn:focus {
+  background-color: #6c8cff;
+}

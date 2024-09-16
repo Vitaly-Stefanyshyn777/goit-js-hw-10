@@ -1,0 +1,31 @@
+.nav-list {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  gap: 16px;
+}
+
+.nav-item {
+  border: 1px solid #808080;
+  max-width: 150px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4e75ff;
+  border: none;
+  transition: background-color 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  background-color: #6c8cff;
+}
+.nav-item a {
+  color: #ffffff;
+  font-family: sans-serif;
+}
