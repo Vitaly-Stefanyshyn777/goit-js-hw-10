@@ -6,7 +6,7 @@ import glob from "glob"; // Змінено спосіб імпорту
 
 export default defineConfig(({ command }) => ({
   // Вкажіть базовий шлях, що відповідає назві репозиторію
-  base: command === "build" ? "/js-009/" : "/",
+  base: command === "build" ? "/goit-js-hw-10/" : "/",
   define: {
     [command === "serve" ? "global" : "_global"]: {},
   },
