@@ -2,10 +2,10 @@ import { defineConfig } from "vite";
 import injectHTML from "vite-plugin-html-inject";
 import FullReload from "vite-plugin-full-reload";
 import SortCss from "postcss-sort-media-queries";
-import glob from "glob"; // Змінено спосіб імпорту
+import pkg from "glob"; // Імпорт всього модуля
+const { glob } = pkg; // Витягуємо 'glob' з модуля
 
 export default defineConfig(({ command }) => ({
-  // Вкажіть базовий шлях, що відповідає назві репозиторію
   base: command === "build" ? "/goit-js-hw-10/" : "/",
   define: {
     [command === "serve" ? "global" : "_global"]: {},
