@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "goit-js-hw-10",
-    "preview": "goit-js-hw-10",
+    "build": "vite build",
+    "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
@@ -22,8 +22,6 @@
     "vite-plugin-html-inject": "^1.1.2"
   },
   "dependencies": {
-    "flatpickr": "^4.6.13",
-    "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.3"
   }
 }
