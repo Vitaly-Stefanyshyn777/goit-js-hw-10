@@ -2,8 +2,7 @@ import { defineConfig } from "vite";
 import injectHTML from "vite-plugin-html-inject";
 import FullReload from "vite-plugin-full-reload";
 import SortCss from "postcss-sort-media-queries";
-import pkg from "glob"; // Імпорт всього модуля
-const { glob } = pkg; // Витягуємо 'glob' з модуля
+import { globSync } from "glob"; // Імпортуйте `globSync` з `glob`
 
 export default defineConfig(({ command }) => ({
   base: command === "build" ? "/goit-js-hw-10/" : "/",
@@ -14,7 +13,7 @@ export default defineConfig(({ command }) => ({
   build: {
     sourcemap: true,
     rollupOptions: {
-      input: glob.sync("./src/*.html"),
+      input: globSync("./src/*.html"), // Використовуйте `globSync`
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {

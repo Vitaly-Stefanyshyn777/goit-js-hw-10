@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/goit-js-hw-10/",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist" 
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "glob": "^11.0.0",
@@ -16,10 +16,11 @@
     "vite": "^5.4.2"
   },
   "dependencies": {
-    "flatpickr": "^4.6.13", 
+    "flatpickr": "^4.6.13",
+    "gh-pages": "^6.1.1",
+    "izitoast": "^1.4.0",
     "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2",
-    "gh-pages": "^6.1.1" 
+    "vite-plugin-html-inject": "^1.1.2"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC"
