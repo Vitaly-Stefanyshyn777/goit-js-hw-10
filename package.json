@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "goit-js-hw-10",
-    "preview": "vite preview",
+    "preview": "goit-js-hw-10",
     "deploy": "gh-pages -d dist"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
